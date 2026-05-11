@@ -1,0 +1,26 @@
+{
+  "name": "balatro-mods-manager",
+  "module": "src/index.tsx",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run src/index.tsx",
+    "start": "bun run src/index.tsx",
+    "build:exe": "bun build src/index.tsx --compile --minify --outfile dist/BalatroMM.exe",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/luaparse": "^0.2.13",
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.2.6",
+    "@opentui/react": "^0.2.6",
+    "luaparse": "^0.3.1",
+    "react": "^19.2.6"
+  }
+}
