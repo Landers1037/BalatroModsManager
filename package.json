@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "bun run src/index.tsx",
     "start": "bun run src/index.tsx",
-    "build:exe": "bun build src/index.tsx --compile --minify --outfile dist/BalatroMM.exe",
+    "build:exe": "bun build src/index.tsx --target=bun-windows-x64-modern --compile --minify --outfile dist/BalatroMM.exe",
     "typecheck": "tsc --noEmit",
     "test": "bun test"
   },
